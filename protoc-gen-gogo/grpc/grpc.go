@@ -111,6 +111,7 @@ func (g *grpc) Generate(file *generator.FileDescriptor) {
 	grpcPkg = string(g.gen.AddImport(grpcPkgPath))
 
 	g.P("// Reference imports to suppress errors if they are not otherwise used.")
+	g.P("//  Salem .")
 	g.P("var _ ", contextPkg, ".Context")
 	g.P("var _ ", grpcPkg, ".ClientConn")
 	g.P()
