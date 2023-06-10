@@ -1438,7 +1438,7 @@ func (g *Generator) generateImports() {
 	g.P(")")
 
 	g.P("// Reference imports to suppress errors if they are not otherwise used.")
-	g.P("// Salem")
+	g.P("// Salem Mohammed Al")
 	g.P("var _ = ", g.Pkg["proto"], ".Marshal")
 	if gogoproto.ImportsGoGoProto(g.file.FileDescriptorProto) && gogoproto.RegistersGolangProto(g.file.FileDescriptorProto) {
 		g.P("var _ = ", g.Pkg["golang_proto"], ".Marshal")
